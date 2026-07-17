@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Live Workshop: Build an Industry-Ready IT Career in 30 Days | SkillsMate Solutions</title>
+<meta name="description" content="Join SkillsMate Solutions' free live workshop for students, working professionals, and career changers. Discover the exact roadmap to build an industry-ready IT career in 30 days — no guesswork, no wasted courses.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Free Live Workshop: Build an Industry-Ready IT Career in 30 Days">
+<meta property="og:description" content="A free live workshop for students, working professionals, and career changers exploring IT. Get the roadmap, real projects, and a 30-day action plan.">
+<meta property="og:image" content="[INSERT OG IMAGE URL — 1200x630px]">
+<meta property="og:type" content="website">
+<meta property="og:url" content="[INSERT PAGE URL]">
+
+<link rel="icon" type="image/png" href="[INSERT FAVICON URL]">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  /* ===== TOKENS ===== */
+  :root{
+    --bg-main:#060a1c;
+    --bg-alt:#0b1130;
+    --bg-card:#0f1636;
+    --cta:#f5820d;
+    --orange-light:#ffb14d;
+    --purple:#7b4ae2;
+    --cyan:#28c9e8;
+    --text-main:#f4f6fb;
+    --text-support:#a3aac2;
+    --border:rgba(255,255,255,0.09);
+    --border-strong:rgba(255,255,255,0.16);
+    --success:#28c9e8;
+    --urgency:#ff6b6b;
+    --max-content:1220px;
+    --max-text:880px;
+    --hero-width:950px;
+    --radius-card:1rem;
+    --radius-btn:999px;
+    --space-section-desktop:104px;
+    --space-section-mobile:60px;
+    --font-display:'Sora', sans-serif;
+    --font-body:'Inter', sans-serif;
+
+    --gradient-hero: radial-gradient(60% 55% at 50% 0%, rgba(123,74,226,0.28) 0%, transparent 70%),
+                      radial-gradient(45% 45% at 85% 15%, rgba(40,201,232,0.16) 0%, transparent 70%),
+                      linear-gradient(180deg, #080d24 0%, #050813 100%);
+    --gradient-cta: linear-gradient(135deg, #ffb14d 0%, #f5820d 55%, #e8630a 100%);
+    --gradient-card: linear-gradient(180deg, #141c40 0%, #0c1230 100%);
+    --gradient-ring: linear-gradient(135deg, #28c9e8 0%, #7b4ae2 100%);
+    --gradient-text: linear-gradient(90deg, #ffb14d 0%, #f5820d 60%, #ff9d3d 100%);
+    --gradient-cyan-purple: linear-gradient(90deg, #28c9e8 0%, #7b4ae2 100%);
+
+    --shadow-card: 0 12px 34px -14px rgba(0,0,0,0.6);
+    --shadow-glow-orange: 0 14px 40px -12px rgba(245,130,13,0.55);
+    --shadow-glow-cyan: 0 14px 40px -12px rgba(40,201,232,0.35);
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--bg-main);
+    color:var(--text-main);
+    font-family:var(--font-body), Arial, sans-serif;
+    font-size:17px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img{max-width:100%; display:block;}
+  a{color:inherit; text-decoration:none;}
+  ul{list-style:none;}
+
+  h1,h2,h3{font-family:var(--font-display); font-weight:700; line-height:1.15; letter-spacing:-0.02em;}
+
+  .wrap{max-width:var(--max-content); margin:0 auto; padding:0 24px;}
+  .text-col{max-width:var(--max-text); margin:0 auto;}
+  .center{text-align:center;}
+
+  section{padding:var(--space-section-desktop) 0;}
+  @media(max-width:768px){section{padding:var(--space-section-mobile) 0;}}
+
+  .eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    color:var(--cyan);
+    font-family:var(--font-body);
+    font-weight:600;
+    font-size:12px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    margin-bottom:16px;
+    border:1px solid var(--border-strong);
+    background:rgba(123,74,226,0.12);
+    padding:7px 16px;
+    border-radius:999px;
+  }
+
+  .section-headline{
+    font-size:44px;
+    margin-bottom:16px;
+  }
+  @media(max-width:768px){.section-headline{font-size:30px;}}
+
+  .section-sub{
+    color:var(--text-support);
+    font-size:18px;
+    margin-bottom:48px;
+  }
+  @media(max-width:768px){.section-sub{font-size:16px; margin-bottom:32px;}}
+
+  .card{
+    background:var(--gradient-card);
+    border:1px solid var(--border);
+    border-radius:var(--radius-card);
+    padding:32px;
+    box-shadow:var(--shadow-card);
+    transition:transform 0.25s ease, border-color 0.25s ease;
+  }
+  @media(max-width:768px){.card{padding:24px;}}
+  .card:hover{transform:translateY(-4px); border-color:rgba(40,201,232,0.35);}
+
+  /* ===== BUTTONS ===== */
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    background:var(--gradient-cta);
+    color:#1a0d02;
+    font-family:var(--font-display);
+    font-weight:700;
+    font-size:16px;
+    letter-spacing:0.1px;
+    padding:0 32px;
+    height:58px;
+    border-radius:var(--radius-btn);
+    border:none;
+    cursor:pointer;
+    box-shadow:var(--shadow-glow-orange);
+    transition:transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .btn:hover{
+    transform:translateY(-2px) scale(1.02);
+    box-shadow:var(--shadow-glow-orange);
+  }
+  .btn:focus-visible{
+    outline:3px solid var(--cyan);
+    outline-offset:3px;
+  }
+  .btn-secondary{
+    background:transparent;
+    border:1px solid var(--border-strong);
+    box-shadow:none;
+    color:var(--text-main);
+    height:52px;
+    padding:0 26px;
+    font-size:15px;
+  }
+  .btn-secondary:hover{border-color:var(--cyan); transform:translateY(-2px); box-shadow:none;}
+  .btn-block{width:100%;}
+  @media(max-width:768px){
+    .btn{height:56px; font-size:16px;}
+  }
+
+  .cta-row{display:flex; justify-content:center; margin-top:36px;}
+
+  /* ===== HEADER ===== */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:rgba(6,10,28,0.85);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--border);
+  }
+  .header-inner{
+    max-width:var(--max-content);
+    margin:0 auto;
+    padding:16px 24px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .brand{font-family:var(--font-display); font-weight:700; font-size:20px; letter-spacing:0.2px;}
+  .brand span{color:var(--orange-light);}
+  header .btn{height:46px; padding:0 22px; font-size:15px;}
+
+  /* ===== HERO ===== */
+  .hero{padding-top:72px; padding-bottom:80px; position:relative; background:var(--gradient-hero); overflow:hidden;}
+  .hero::before{
+    content:"";
+    position:absolute; inset:0;
+    background:
+      radial-gradient(600px 300px at 20% 0%, rgba(123,74,226,0.20), transparent 60%),
+      radial-gradient(700px 400px at 80% 10%, rgba(40,201,232,0.16), transparent 60%);
+    pointer-events:none;
+  }
+  .hero-inner{position:relative; max-width:var(--hero-width); margin:0 auto; text-align:center;}
+  .hero h1{
+    font-size:60px;
+    font-weight:800;
+    line-height:1.12;
+    margin-bottom:20px;
+    text-wrap:balance;
+  }
+  .hero h1 .highlight{background:var(--gradient-text); -webkit-background-clip:text; background-clip:text; color:transparent;}
+  @media(max-width:1024px){.hero h1{font-size:46px;}}
+  @media(max-width:600px){.hero h1{font-size:34px;}}
+
+  .hero-sub{
+    color:var(--text-support);
+    font-size:19px;
+    max-width:760px;
+    margin:0 auto 32px;
+  }
+  @media(max-width:600px){.hero-sub{font-size:16px;}}
+
+  .event-strip{
+    display:flex; flex-wrap:wrap; justify-content:center; gap:12px;
+    margin:0 auto 32px;
+  }
+  .event-chip{
+    display:flex; align-items:center; gap:8px;
+    background:var(--gradient-card);
+    border:1px solid var(--border);
+    border-radius:999px;
+    padding:10px 18px;
+    font-size:14px;
+    color:var(--text-support);
+    box-shadow:var(--shadow-card);
+  }
+  .event-chip strong{color:var(--text-main); font-weight:600;}
+  .event-chip .dot{color:var(--cyan);}
+
+  .hero-reassurance{
+    margin-top:16px;
+    font-size:14px;
+    color:var(--text-support);
+  }
+
+  .hero-image{
+    margin:56px auto 0;
+    max-width:820px;
+    border-radius:20px;
+    overflow:hidden;
+    border:1px solid var(--border);
+    box-shadow:0 30px 80px rgba(0,0,0,0.45);
+  }
+  .hero-image img{width:100%; aspect-ratio:16/9; object-fit:cover;}
+
+  .trust-line{
+    margin-top:20px;
+    text-align:center;
+    font-size:14px;
+    color:var(--text-support);
+  }
+  .trust-line strong{color:var(--cyan);}
+
+  /* ===== CREDIBILITY STRIP ===== */
+  .credibility{background:var(--bg-alt); border-top:1px solid var(--border); border-bottom:1px solid var(--border); padding:56px 0;}
+  .credibility-grid{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:24px; text-align:center;
+  }
+  .credibility-grid .stat-num{font-family:var(--font-display); font-weight:800; font-size:36px; background:var(--gradient-cyan-purple); -webkit-background-clip:text; background-clip:text; color:transparent;}
+  .credibility-grid .stat-label{color:var(--text-support); font-size:14px; margin-top:6px;}
+  @media(max-width:768px){
+    .credibility-grid{grid-template-columns:1fr; gap:28px;}
+  }
+
+  /* ===== PROBLEM SECTION ===== */
+  .problem-grid{display:grid; grid-template-columns:1fr; gap:16px; margin-top:8px;}
+  .pain-list{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:40px;}
+  .pain-item{
+    display:flex; gap:14px; align-items:flex-start;
+    background:var(--bg-card); border:1px solid var(--border); border-radius:14px; padding:20px;
+  }
+  .pain-item .mark{color:var(--urgency); font-weight:700; font-size:18px; line-height:1;}
+  .pain-item p{color:var(--text-support); font-size:15.5px; text-align:left;}
+  @media(max-width:700px){.pain-list{grid-template-columns:1fr;}}
+
+  .realization-box{
+    border-left:3px solid var(--cyan);
+    padding:20px 24px;
+    background:var(--bg-alt);
+    border-radius:0 14px 14px 0;
+    max-width:var(--max-text);
+    margin:0 auto;
+  }
+  .realization-box p{font-size:19px; font-weight:600;}
+  .realization-box .sub{color:var(--text-support); font-weight:400; font-size:16px; margin-top:8px;}
+
+  /* ===== OPPORTUNITY / TRANSFORMATION ===== */
+  .transform-grid{
+    display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:8px;
+  }
+  .transform-card h3{font-size:20px; margin-bottom:14px;}
+  .transform-card.old{border-color:rgba(255,107,107,0.25);}
+  .transform-card.old h3{color:var(--urgency);}
+  .transform-card.new{border-color:rgba(40,201,232,0.3);}
+  .transform-card.new h3{color:var(--cyan);}
+  .transform-card ul li{
+    color:var(--text-support); font-size:15.5px; padding:8px 0 8px 24px; position:relative; text-align:left;
+  }
+  .transform-card.old ul li::before{content:"✕"; position:absolute; left:0; color:var(--urgency);}
+  .transform-card.new ul li::before{content:"✓"; position:absolute; left:0; color:var(--success);}
+  @media(max-width:700px){.transform-grid{grid-template-columns:1fr;}}
+
+  .roadmap-note{
+    text-align:center; margin-top:36px; color:var(--text-support); font-size:16px;
+  }
+
+  /* ===== LEARNING MODULES ===== */
+  .modules-grid{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:24px;
+  }
+  .module-card{text-align:left;}
+  .module-num{
+    display:inline-flex; align-items:center; justify-content:center;
+    width:38px; height:38px; border-radius:10px;
+    background:rgba(40,201,232,0.12); color:var(--cyan);
+    font-family:var(--font-display); font-weight:700; font-size:15px;
+    margin-bottom:18px;
+  }
+  .module-card h3{font-size:19px; margin-bottom:10px;}
+  .module-card p{color:var(--text-support); font-size:15px; margin-bottom:14px;}
+  .module-result{
+    font-size:13.5px; color:var(--cyan); border-top:1px solid var(--border); padding-top:12px;
+  }
+  @media(max-width:1024px){.modules-grid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:640px){.modules-grid{grid-template-columns:1fr;}}
+
+  /* ===== FRAMEWORK ===== */
+  .framework-wrap{
+    background:var(--bg-alt); border:1px solid var(--border); border-radius:22px; padding:48px;
+  }
+  @media(max-width:768px){.framework-wrap{padding:26px;}}
+  .framework-name{
+    text-align:center; font-size:32px; margin-bottom:8px;
+  }
+  .framework-name span{color:var(--cyan);}
+  .framework-intro{text-align:center; color:var(--text-support); max-width:var(--max-text); margin:0 auto 40px;}
+
+  .framework-steps{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-bottom:40px;
+  }
+  .fw-step{
+    background:var(--bg-card); border:1px solid var(--border); border-radius:14px; padding:22px; text-align:left;
+  }
+  .fw-letter{
+    display:inline-flex; align-items:center; justify-content:center;
+    width:34px; height:34px; border-radius:50%;
+    background:var(--gradient-ring); color:#04101a; font-weight:800; font-family:var(--font-display);
+    margin-bottom:12px;
+  }
+  .fw-step h4{font-size:16px; margin-bottom:6px;}
+  .fw-step p{font-size:14px; color:var(--text-support);}
+  @media(max-width:900px){.framework-steps{grid-template-columns:1fr 1fr;}}
+  @media(max-width:600px){.framework-steps{grid-template-columns:1fr;}}
+
+  .outcomes-grid{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-bottom:36px;
+  }
+  .outcome-chip{
+    display:flex; gap:10px; align-items:flex-start;
+    font-size:14px; color:var(--text-support);
+  }
+  .outcome-chip .check{color:var(--success); font-weight:700;}
+  @media(max-width:900px){.outcomes-grid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:600px){.outcomes-grid{grid-template-columns:1fr;}}
+
+  .fw-summary{
+    text-align:center; font-size:18px; font-weight:600; color:var(--text-main);
+  }
+
+  /* ===== WHO FOR / NOT FOR ===== */
+  .qualify-grid{display:grid; grid-template-columns:1fr 1fr; gap:24px;}
+  .qualify-card h3{font-size:20px; margin-bottom:20px;}
+  .qualify-list li{
+    display:flex; gap:12px; align-items:flex-start; padding:10px 0; font-size:15.5px; text-align:left; color:var(--text-support);
+  }
+  .qualify-list .yes{color:var(--success); font-weight:700;}
+  .qualify-list .no{color:var(--urgency); font-weight:700;}
+  @media(max-width:700px){.qualify-grid{grid-template-columns:1fr; gap:16px;}}
+
+  /* ===== TESTIMONIALS ===== */
+  .testimonial-grid{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-bottom:24px;
+  }
+  .testimonial-card{text-align:left;}
+  .testimonial-card p.quote{font-size:15.5px; color:var(--text-main); margin-bottom:16px;}
+  .testimonial-card .who{display:flex; align-items:center; gap:12px;}
+  .testimonial-card .avatar{width:40px; height:40px; border-radius:50%; background:var(--bg-alt); border:1px solid var(--border);}
+  .testimonial-card .name{font-size:14px; font-weight:600;}
+  .testimonial-card .role{font-size:12.5px; color:var(--text-support);}
+  @media(max-width:900px){.testimonial-grid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:600px){.testimonial-grid{grid-template-columns:1fr;}}
+
+  .results-strip{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin:32px 0;
+  }
+  .result-chip{
+    text-align:center; background:var(--bg-card); border:1px solid var(--border); border-radius:14px; padding:20px;
+  }
+  .result-chip .amount{font-family:var(--font-display); font-weight:800; font-size:22px; background:linear-gradient(90deg, var(--cyan) 0%, var(--purple) 100%); -webkit-background-clip:text; background-clip:text; color:transparent;}
+  .result-chip .label{font-size:13px; color:var(--text-support); margin-top:4px;}
+  @media(max-width:768px){.results-strip{grid-template-columns:1fr 1fr;}}
+
+  .disclaimer{
+    text-align:center; font-size:13px; color:var(--text-support); max-width:var(--max-text); margin:0 auto;
+  }
+
+  /* ===== TRAINER ===== */
+  .trainer-grid{
+    display:grid; grid-template-columns:340px 1fr; gap:48px; align-items:center;
+  }
+  .trainer-image{
+    border-radius:20px; overflow:hidden; border:1px solid var(--border); aspect-ratio:4/5;
+  }
+  .trainer-image img{width:100%; height:100%; object-fit:cover;}
+  .trainer-content h3{font-size:14px; text-transform:uppercase; letter-spacing:1px; color:var(--cyan); margin-bottom:8px; font-family:'Inter',sans-serif; font-weight:700;}
+  .trainer-content h2{font-size:32px; margin-bottom:6px;}
+  .trainer-content .title{color:var(--text-support); margin-bottom:20px; font-size:16px;}
+  .trainer-content p.bio{color:var(--text-support); font-size:16px; margin-bottom:24px; text-align:left;}
+  .trainer-stats{display:flex; gap:28px; flex-wrap:wrap;}
+  .trainer-stats .t-stat-num{font-family:var(--font-display); font-weight:800; font-size:24px; color:var(--orange-light);}
+  .trainer-stats .t-stat-label{font-size:12.5px; color:var(--text-support);}
+  @media(max-width:800px){
+    .trainer-grid{grid-template-columns:1fr; text-align:center;}
+    .trainer-image{max-width:280px; margin:0 auto;}
+    .trainer-content p.bio{text-align:center;}
+    .trainer-stats{justify-content:center;}
+  }
+
+  /* ===== BONUSES ===== */
+  .bonus-grid{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-bottom:20px;
+  }
+  .bonus-card{text-align:left; position:relative;}
+  .bonus-card.core{grid-column:1/-1; display:grid; grid-template-columns:1fr 1fr; gap:24px; align-items:center;}
+  .bonus-tag{
+    display:inline-block; background:rgba(40,201,232,0.12); color:var(--cyan);
+    font-size:12px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase;
+    padding:5px 12px; border-radius:999px; margin-bottom:14px;
+  }
+  .bonus-card h3{font-size:18px; margin-bottom:8px;}
+  .bonus-card p{color:var(--text-support); font-size:14.5px; margin-bottom:14px;}
+  .bonus-value{font-size:13px; color:var(--text-support);}
+  .bonus-value strong{color:var(--text-main); text-decoration:line-through; text-decoration-color:var(--urgency);}
+  @media(max-width:1024px){.bonus-grid{grid-template-columns:1fr 1fr;} .bonus-card.core{grid-template-columns:1fr;}}
+  @media(max-width:640px){.bonus-grid{grid-template-columns:1fr;}}
+
+  .total-value-box{
+    text-align:center; background:var(--bg-alt); border:1px solid var(--border);
+    border-radius:16px; padding:28px; margin-top:12px;
+  }
+  .total-value-box .label{color:var(--text-support); font-size:14px; margin-bottom:6px;}
+  .total-value-box .value{font-family:var(--font-display); font-weight:800; font-size:30px; color:var(--orange-light);}
+  .total-value-box .free{color:var(--success); font-weight:700;}
+
+  /* ===== URGENCY ===== */
+  .urgency-box{
+    border:1px solid rgba(255,107,107,0.3); background:rgba(255,107,107,0.06);
+    border-radius:20px; padding:44px; text-align:center; max-width:var(--max-text); margin:0 auto;
+  }
+  .urgency-box h2{font-size:32px; margin-bottom:16px; color:var(--text-main);}
+  .urgency-box p{color:var(--text-support); font-size:17px; margin-bottom:0;}
+  @media(max-width:768px){.urgency-box{padding:28px;} .urgency-box h2{font-size:24px;}}
+
+  /* ===== FAQ ===== */
+  .faq-list{max-width:var(--max-text); margin:0 auto;}
+  .faq-item{
+    border-bottom:1px solid var(--border); padding:6px 0;
+  }
+  .faq-question{
+    width:100%; text-align:left; background:none; border:none; color:var(--text-main);
+    font-family:'Inter',sans-serif; font-weight:600; font-size:16.5px;
+    padding:20px 4px; display:flex; justify-content:space-between; align-items:center; gap:16px;
+    cursor:pointer;
+  }
+  .faq-question .icon{color:var(--cyan); font-size:20px; flex-shrink:0; transition:transform 0.2s ease;}
+  .faq-item.open .faq-question .icon{transform:rotate(45deg);}
+  .faq-answer{
+    max-height:0; overflow:hidden; transition:max-height 0.25s ease;
+  }
+  .faq-answer p{color:var(--text-support); font-size:15px; padding:0 4px 20px; text-align:left;}
+  .faq-item.open .faq-answer{max-height:200px;}
+
+  /* ===== FINAL CTA ===== */
+  .final-cta{
+    background:radial-gradient(800px 400px at 50% 0%, rgba(123,74,226,0.18), transparent 70%), var(--bg-alt);
+    border-top:1px solid var(--border); border-bottom:1px solid var(--border);
+  }
+  .final-cta h2{font-size:42px; margin-bottom:16px;}
+  @media(max-width:768px){.final-cta h2{font-size:28px;}}
+  .final-cta p.desc{color:var(--text-support); font-size:18px; max-width:var(--max-text); margin:0 auto 32px;}
+  .final-benefits{
+    display:grid; grid-template-columns:1fr 1fr; gap:14px; max-width:700px; margin:0 auto 36px; text-align:left;
+  }
+  .final-benefits li{display:flex; gap:10px; align-items:flex-start; font-size:15px; color:var(--text-support);}
+  .final-benefits .check{color:var(--success); font-weight:700;}
+  @media(max-width:600px){.final-benefits{grid-template-columns:1fr;}}
+  .final-closing{margin-top:20px; color:var(--text-support); font-size:15px;}
+
+  /* ===== FOOTER ===== */
+  footer{padding:56px 0 120px; border-top:1px solid var(--border);}
+  @media(min-width:769px){footer{padding-bottom:56px;}}
+  .footer-top{
+    display:flex; flex-wrap:wrap; justify-content:space-between; gap:24px; margin-bottom:32px;
+  }
+  .footer-links{display:flex; flex-wrap:wrap; gap:22px; font-size:14px; color:var(--text-support);}
+  .footer-links a:hover{color:var(--cyan);}
+  .footer-contact{font-size:14px; color:var(--text-support); margin-bottom:24px;}
+  .footer-disclaimer{font-size:12.5px; color:var(--text-support); opacity:0.8; max-width:var(--max-text); border-top:1px solid var(--border); padding-top:24px;}
+  .footer-copy{font-size:13px; color:var(--text-support); margin-top:16px;}
+
+  /* ===== STICKY MOBILE CTA ===== */
+  .sticky-cta{
+    display:none;
+  }
+  @media(max-width:768px){
+    .sticky-cta{
+      display:flex; position:fixed; bottom:0; left:0; right:0; z-index:60;
+      padding:12px 16px; background:rgba(6,10,28,0.95); backdrop-filter:blur(10px);
+      border-top:1px solid var(--border);
+    }
+    .sticky-cta .btn{height:54px; font-size:16px;}
+  }
+
+  /* Section CTA helper text */
+  .section-cta-note{text-align:center; margin-top:14px; font-size:13px; color:var(--text-support);}
+</style>
+</head>
+<body>
+
+<!-- ============ 1. HEADER ============ -->
+<header>
+  <div class="header-inner">
+    <div class="brand">SkillsMate <span>Solutions</span></div>
+    <a href="#" class="btn cta-link" data-cta="header">Register Now</a>
+  </div>
+</header>
+
+<!-- ============ 2. HERO ============ -->
+<section class="hero">
+  <div class="wrap hero-inner">
+    <p class="eyebrow">Free Live Workshop for Students, Professionals & Career Changers</p>
+    <h1>Build an <span class="highlight">Industry-Ready IT Career</span> in 30 Days — Without the Guesswork</h1>
+    <p class="hero-sub">A free live workshop for students, working professionals, and career changers exploring IT. Discover the exact roadmap to choose the right path, build real skills, and become job-ready — without the guesswork of random courses.</p>
+
+    <div class="event-strip">
+      <div class="event-chip"><span class="dot">📅</span> <strong>[INSERT DATE]</strong></div>
+      <div class="event-chip"><span class="dot">🕒</span> <strong>[INSERT TIME]</strong></div>
+      <div class="event-chip"><span class="dot">⏱</span> <strong>60–90 mins</strong></div>
+      <div class="event-chip"><span class="dot">💻</span> <strong>Live Online (Zoom)</strong></div>
+      <div class="event-chip"><span class="dot">🎟</span> <strong>FREE</strong></div>
+    </div>
+
+    <div class="cta-row">
+      <a href="#" class="btn cta-link" data-cta="hero">Reserve My Free Seat</a>
+    </div>
+    <p class="hero-reassurance">Takes less than 30 seconds — no payment required · No prior IT background needed</p>
+
+    <div class="hero-image">
+      <img src="[INSERT TRAINER OR EVENT IMAGE URL]" alt="Siva Kumar presenting the SkillsMate IT Career Clarity live workshop" loading="lazy">
+    </div>
+
+    <p class="trust-line">Trusted by <strong>[NUMBER]+ students</strong> across <strong>[NUMBER]+ live workshops</strong></p>
+  </div>
+</section>
+
+<!-- ============ 3. CREDIBILITY STRIP ============ -->
+<section class="credibility">
+  <div class="wrap">
+    <div class="credibility-grid">
+      <div><div class="stat-num">[NUMBER]+</div><div class="stat-label">Students Trained</div></div>
+      <div><div class="stat-num">[NUMBER]+</div><div class="stat-label">Live Workshops Conducted</div></div>
+      <div><div class="stat-num">[NUMBER]+</div><div class="stat-label">Years of Experience</div></div>
+      <div><div class="stat-num">[NUMBER]+</div><div class="stat-label">Career Transition Stories</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. PROBLEM SECTION ============ -->
+<section id="problem">
+  <div class="wrap">
+    <div class="text-col center">
+      <p class="eyebrow">The Real Problem</p>
+      <h2 class="section-headline">You Don't Have a Technology Problem. You Have a Clarity Problem.</h2>
+      <p class="section-sub">One person says learn Java. Another says AI. Someone else says Cloud. Then someone tells you Salesforce is the future — so you buy another course, watch another video, and months later you're exactly where you started.</p>
+    </div>
+
+    <div class="pain-list">
+      <div class="pain-item"><span class="mark">?</span><p>Which IT career should I actually choose?</p></div>
+      <div class="pain-item"><span class="mark">?</span><p>Am I too late to switch into IT?</p></div>
+      <div class="pain-item"><span class="mark">?</span><p>Can someone without an IT background really succeed?</p></div>
+      <div class="pain-item"><span class="mark">?</span><p>Why am I learning so much but still don't feel job-ready?</p></div>
+      <div class="pain-item"><span class="mark">?</span><p>Why aren't companies calling me for interviews?</p></div>
+      <div class="pain-item"><span class="mark">?</span><p>Why does everyone else seem to know what they're doing?</p></div>
+    </div>
+
+    <div class="realization-box">
+      <p>You don't have a technology problem. You have a Career Clarity problem.</p>
+      <p class="sub">Until you know the right direction, every course feels like another gamble.</p>
+    </div>
+
+    <div class="cta-row">
+      <a href="#" class="btn cta-link" data-cta="problem-section">Yes, I Want Clarity</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. NEW OPPORTUNITY SECTION ============ -->
+<section style="background:var(--bg-alt); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+  <div class="wrap">
+    <div class="text-col center">
+      <p class="eyebrow">The Shift</p>
+      <h2 class="section-headline">Learning More Isn't the Answer. Learning Right Is.</h2>
+      <p class="section-sub">Most people believe another course will finally unlock their career. It won't. Success comes from learning the right skill, at the right time, with the right roadmap — and guidance from someone who's already walked the path.</p>
+    </div>
+
+    <div class="transform-grid">
+      <div class="card transform-card old">
+        <h3>The Old Approach</h3>
+        <ul>
+          <li>Jumping between random technologies</li>
+          <li>Learning from scattered YouTube videos</li>
+          <li>Certificates with no practical proof</li>
+          <li>No clear roadmap or next step</li>
+          <li>Months of effort, still no interviews</li>
+        </ul>
+      </div>
+      <div class="card transform-card new">
+        <h3>The SkillsMate Roadmap</h3>
+        <ul>
+          <li>One technology, learned deeply</li>
+          <li>A structured, mentor-guided path</li>
+          <li>Real projects employers value</li>
+          <li>A clear 30-day action plan</li>
+          <li>Interview-ready, industry-ready skills</li>
+        </ul>
+      </div>
+    </div>
+    <p class="roadmap-note">This is exactly what the C.A.R.E.E.R. Framework™ walks you through — covered live in the workshop.</p>
+  </div>
+</section>
+
+<!-- ============ 6. WHAT YOU WILL LEARN ============ -->
+<section id="learn">
+  <div class="wrap">
+    <div class="text-col center">
+      <p class="eyebrow">What You'll Learn</p>
+      <h2 class="section-headline">A Complete Roadmap From Confusion to Confidence</h2>
+      <p class="section-sub">Six practical modules covering everything you need to choose, learn, and land your first IT role.</p>
+    </div>
+
+    <div class="modules-grid">
+      <div class="card module-card">
+        <div class="module-num">01</div>
+        <h3>Career Clarity</h3>
+        <p>Choose the right IT path — not the trendiest one. Match your background and goals to a career that actually fits.</p>
+        <div class="module-result">Result: A personalized shortlist of IT career paths.</div>
+      </div>
+      <div class="card module-card">
+        <div class="module-num">02</div>
+        <h3>Why Salesforce</h3>
+        <p>Understand why Salesforce remains one of the fastest-growing CRM ecosystems — and if it's right for you.</p>
+        <div class="module-result">Result: Clarity on whether Salesforce fits your goals.</div>
+      </div>
+      <div class="card module-card">
+        <div class="module-num">03</div>
+        <h3>Job-Ready Skills</h3>
+        <p>Learn what companies actually hire for — the gap between theory and real, interview-ready skill.</p>
+        <div class="module-result">Result: A clear list of skills to prioritize.</div>
+      </div>
+      <div class="card module-card">
+        <div class="module-num">04</div>
+        <h3>Real Projects</h3>
+        <p>Build proof, not just certificates. See how hands-on projects build genuine interview confidence.</p>
+        <div class="module-result">Result: A plan for your first portfolio projects.</div>
+      </div>
+      <div class="card module-card">
+        <div class="module-num">05</div>
+        <h3>Interview Readiness</h3>
+        <p>Walk into interviews prepared. Understand how recruiters actually evaluate IT candidates.</p>
+        <div class="module-result">Result: A real plan to prepare for interviews.</div>
+      </div>
+      <div class="card module-card">
+        <div class="module-num">06</div>
+        <h3>30-Day Roadmap</h3>
+        <p>Leave with a plan you can start today — a structured 30-day path, not just inspiration.</p>
+        <div class="module-result">Result: A step-by-step 30-day action plan.</div>
+      </div>
+    </div>
+
+    <div class="cta-row">
+      <a href="#" class="btn cta-link" data-cta="learning-section">Save My Spot Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. CORE FRAMEWORK ============ -->
+<section style="background:var(--bg-alt); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+  <div class="wrap">
+    <div class="framework-wrap">
+      <p class="eyebrow center" style="display:block;">The Framework</p>
+      <h2 class="framework-name">The <span>C.A.R.E.E.R.</span> Framework™</h2>
+      <p class="framework-intro">The exact system we use to help learners transition into the IT industry — step by step, without guesswork.</p>
+
+      <div class="framework-steps">
+        <div class="fw-step"><div class="fw-letter">C</div><h4>Career Clarity</h4><p>Stop following trends. Find the IT path that fits your goals and background.</p></div>
+        <div class="fw-step"><div class="fw-letter">A</div><h4>Assess Your Potential</h4><p>Understand your current skills and the fastest realistic path into IT.</p></div>
+        <div class="fw-step"><div class="fw-letter">R</div><h4>Right Technology</h4><p>Learn one technology deeply instead of ten technologies poorly.</p></div>
+        <div class="fw-step"><div class="fw-letter">E</div><h4>Experience Through Projects</h4><p>Build real business projects that employers actually value.</p></div>
+        <div class="fw-step"><div class="fw-letter">E</div><h4>Employer Readiness</h4><p>Build a resume, LinkedIn profile, and interview strategy that gets noticed.</p></div>
+        <div class="fw-step"><div class="fw-letter">R</div><h4>Real Mentorship</h4><p>Learn directly from mentors who guide every step of the way.</p></div>
+      </div>
+
+      <div class="outcomes-grid">
+        <div class="outcome-chip"><span class="check">✓</span> Clear career direction</div>
+        <div class="outcome-chip"><span class="check">✓</span> One focused technology</div>
+        <div class="outcome-chip"><span class="check">✓</span> Real portfolio projects</div>
+        <div class="outcome-chip"><span class="check">✓</span> Job-ready resume</div>
+        <div class="outcome-chip"><span class="check">✓</span> Optimized LinkedIn profile</div>
+        <div class="outcome-chip"><span class="check">✓</span> Interview preparation</div>
+        <div class="outcome-chip"><span class="check">✓</span> A 30-day action plan</div>
+        <div class="outcome-chip"><span class="check">✓</span> Ongoing mentorship guidance</div>
+      </div>
+
+      <p class="fw-summary">Career Clarity → Right Skill → Real Proof → Real Opportunities.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8 & 9. WHO FOR / NOT FOR ============ -->
+<section>
+  <div class="wrap">
+    <div class="text-col center">
+      <p class="eyebrow">Is This Right for You?</p>
+      <h2 class="section-headline">Who This Workshop Is For</h2>
+    </div>
+
+    <div class="qualify-grid">
+      <div class="card qualify-card">
+        <h3 style="color:var(--success);">This workshop is for:</h3>
+        <ul class="qualify-list">
+          <li><span class="yes">✓</span> College students</li>
+          <li><span class="yes">✓</span> Fresh graduates</li>
+          <li><span class="yes">✓</span> Working professionals</li>
+          <li><span class="yes">✓</span> Non-IT professionals</li>
+          <li><span class="yes">✓</span> Career changers</li>
+          <li><span class="yes">✓</span> Anyone serious about a long-term IT career</li>
+        </ul>
+      </div>
+      <div class="card qualify-card">
+        <h3 style="color:var(--urgency);">This workshop is NOT for:</h3>
+        <ul class="qualify-list">
+          <li><span class="no">✕</span> People looking for overnight success</li>
+          <li><span class="no">✕</span> People unwilling to practice</li>
+          <li><span class="no">✕</span> People expecting jobs without building skills</li>
+          <li><span class="no">✕</span> People unwilling to follow a structured roadmap</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10. TESTIMONIALS & RESULTS ============ -->
+<section style="background:var(--bg-alt); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+  <div class="wrap">
+    <div class="text-col center">
+      <p class="eyebrow">Success Stories</p>
+      <h2 class="section-headline">Real Outcomes From Real Learners</h2>
+    </div>
+
+    <div class="results-strip">
+      <div class="result-chip"><div class="amount">₹8.5 LPA</div><div class="label">8 Months — [Student Name]</div></div>
+      <div class="result-chip"><div class="amount">₹12 LPA</div><div class="label">Career Switch — [Name]</div></div>
+      <div class="result-chip"><div class="amount">₹6 LPA</div><div class="label">Fresher — [Student Name]</div></div>
+      <div class="result-chip"><div class="amount">₹15 LPA</div><div class="label">Salesforce Developer — [Name]</div></div>
+    </div>
+
+    <div class="testimonial-grid">
+      <div class="card testimonial-card">
+        <p class="quote">"Before joining SkillsMate Solutions I was completely confused about which technology to learn. Now I have a clear roadmap and confidence."</p>
+        <div class="who"><div class="avatar"></div><div><div class="name">[Student Name]</div><div class="role">[Role / Background]</div></div></div>
+      </div>
+      <div class="card testimonial-card">
+        <p class="quote">"The practical projects changed everything. Interviews became much easier."</p>
+        <div class="who"><div class="avatar"></div><div><div class="name">[Student Name]</div><div class="role">[Role / Background]</div></div></div>
+      </div>
+      <div class="card testimonial-card">
+        <p class="quote">"The mentorship kept me accountable and helped me stay focused."</p>
+        <div class="who"><div class="avatar"></div><div><div class="name">[Student Name]</div><div class="role">[Role / Background]</div></div></div>
+      </div>
+    </div>
+
+    <p class="disclaimer">Results are not typical and depend on effort, prior experience, consistency, and implementation.</p>
+  </div>
+</section>
+
+<!-- ============ 11. ABOUT THE TRAINER ============ -->
+<section>
+  <div class="wrap">
+    <div class="trainer-grid">
+      <div class="trainer-image">
+        <img src="[INSERT TRAINER PHOTO URL]" alt="Siva Kumar, Founder of SkillsMate Solutions" loading="lazy">
+      </div>
+      <div class="trainer-content">
+        <h3>Your Coach</h3>
+        <h2>Siva Kumar</h2>
+        <p class="title">Founder, SkillsMate Solutions</p>
+        <p class="bio">Siva Kumar is the founder of SkillsMate Solutions, where he helps students, working professionals, and career changers build practical, industry-ready IT careers. After years of watching capable people struggle — not from lack of ability, but from lack of direction — he built a structured, career-first approach centered on clarity, real projects, and mentorship instead of scattered self-learning. His philosophy is simple: real careers are built on skill and direction, not certificates alone.</p>
+        <div class="trainer-stats">
+          <div><div class="t-stat-num">[NUMBER]+</div><div class="t-stat-label">Students Trained</div></div>
+          <div><div class="t-stat-num">[NUMBER]+</div><div class="t-stat-label">Workshops Conducted</div></div>
+          <div><div class="t-stat-num">[NUMBER]+</div><div class="t-stat-label">Years Experience</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 12. BONUSES ============ -->
+<section style="background:var(--bg-alt); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+  <div class="wrap">
+    <div class="text-col center">
+      <p class="eyebrow">Free Bonuses</p>
+      <h2 class="section-headline">Everything You Need to Take Immediate Action</h2>
+      <p class="section-sub">Practical tools you'll walk away with — free, just for attending live.</p>
+    </div>
+
+    <div class="bonus-grid">
+      <div class="card bonus-card core">
+        <div>
+          <span class="bonus-tag">Core Session</span>
+          <h3>Live Career Clarity Workshop</h3>
+          <p>A live, interactive session where you'll map out the right IT career path, understand Salesforce careers, and leave with a 30-day plan to start immediately.</p>
+          <div class="bonus-value">Value: <strong>₹[VALUE]</strong></div>
+        </div>
+        <img src="[INSERT WORKSHOP MOCKUP IMAGE URL]" alt="Live workshop session preview" loading="lazy" style="border-radius:14px; border:1px solid var(--border);">
+      </div>
+
+      <div class="card bonus-card">
+        <span class="bonus-tag">Bonus 1</span>
+        <h3>Salesforce Career Roadmap PDF</h3>
+        <p>A step-by-step roadmap showing the exact sequence of skills, tools, and milestones to follow.</p>
+        <div class="bonus-value">Value: <strong>₹[VALUE]</strong></div>
+      </div>
+
+      <div class="card bonus-card">
+        <span class="bonus-tag">Bonus 2</span>
+        <h3>IT Learning Guide</h3>
+        <p>A practical guide highlighting which skills matter most — and which topics waste your learning time.</p>
+        <div class="bonus-value">Value: <strong>₹[VALUE]</strong></div>
+      </div>
+
+      <div class="card bonus-card">
+        <span class="bonus-tag">Bonus 3</span>
+        <h3>ATS-Friendly Resume Template</h3>
+        <p>A ready-to-use resume template built to pass Applicant Tracking Systems and reach recruiters.</p>
+        <div class="bonus-value">Value: <strong>₹[VALUE]</strong></div>
+      </div>
+
+      <div class="card bonus-card">
+        <span class="bonus-tag">Bonus 4</span>
+        <h3>LinkedIn Optimization Checklist</h3>
+        <p>A simple checklist to upgrade your profile so recruiters notice you first.</p>
+        <div class="bonus-value">Value: <strong>₹[VALUE]</strong></div>
+      </div>
+    </div>
+
+    <div class="total-value-box">
+      <div class="label">Total Value</div>
+      <div class="value">₹[TOTAL VALUE] <span class="free">→ FREE Today</span></div>
+    </div>
+
+    <div class="cta-row">
+      <a href="#" class="btn cta-link" data-cta="bonuses-section">Claim My Free Bonuses</a>
+    </div>
+    <p class="section-cta-note">Bonuses are delivered to live attendees only — no extra cost, no hidden steps.</p>
+  </div>
+</section>
+
+<!-- ============ 13. URGENCY / COST OF DELAY ============ -->
+<section>
+  <div class="wrap">
+    <div class="urgency-box">
+      <p class="eyebrow" style="color:var(--urgency);">Why You Shouldn't Wait</p>
+      <h2>Every Month of Confusion Is a Month You Don't Get Back</h2>
+      <p>Every random course costs more time and money. Every postponed decision is another missed opportunity. The IT industry keeps evolving — the earlier you start with the right roadmap, the sooner you begin building real experience.</p>
+      <div class="cta-row">
+        <a href="#" class="btn cta-link" data-cta="urgency-section">Yes, I Want Clarity</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 14. FAQ ============ -->
+<section style="background:var(--bg-alt); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+  <div class="wrap">
+    <div class="text-col center">
+      <p class="eyebrow">FAQ</p>
+      <h2 class="section-headline">Frequently Asked Questions</h2>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Who should attend this workshop?<span class="icon">+</span></button>
+        <div class="faq-answer"><p>Students, working professionals, and career changers exploring IT — no prior experience required.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Is the workshop really free?<span class="icon">+</span></button>
+        <div class="faq-answer"><p>Yes, registration is completely free. There's no hidden fee to attend the live session.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">What format is the workshop in?<span class="icon">+</span></button>
+        <div class="faq-answer"><p>It's a live, interactive session on Zoom — not a pre-recorded video or static webinar.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">How long does the workshop run?<span class="icon">+</span></button>
+        <div class="faq-answer"><p>The session runs for approximately 60 to 90 minutes, including time for live Q&A.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Do I need any technical setup?<span class="icon">+</span></button>
+        <div class="faq-answer"><p>No special setup needed — just a laptop or phone with internet and the Zoom app.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">How do I join the session?<span class="icon">+</span></button>
+        <div class="faq-answer"><p>After registering, you'll receive the Zoom link and instructions by email before the session.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Will I get the bonuses even if I just attend?<span class="icon">+</span></button>
+        <div class="faq-answer"><p>Yes — all four bonuses are delivered free to every attendee of the live session.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Will the session be recorded?<span class="icon">+</span></button>
+        <div class="faq-answer"><p>[Add your recording policy here — e.g., "Recording available for 48 hours to attendees only."]</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 15. FINAL CTA ============ -->
+<section class="final-cta">
+  <div class="wrap center">
+    <p class="eyebrow">Last Step</p>
+    <h2>Your Free Seat Is Waiting — Reserve It Now</h2>
+    <p class="desc">One live session can save you months of confusion. Get the roadmap, the bonuses, and a clear next step — all for free, all in one place.</p>
+
+    <ul class="final-benefits">
+      <li><span class="check">✓</span> Understand exactly which IT career fits your background</li>
+      <li><span class="check">✓</span> Learn why Salesforce is a strong entry point right now</li>
+      <li><span class="check">✓</span> Get four free bonuses worth ₹[TOTAL VALUE]</li>
+      <li><span class="check">✓</span> Leave with a 30-day action plan you can start immediately</li>
+      <li><span class="check">✓</span> Ask your questions live and get real answers</li>
+    </ul>
+
+    <div class="event-strip">
+      <div class="event-chip"><span class="dot">📅</span> <strong>[INSERT DATE]</strong></div>
+      <div class="event-chip"><span class="dot">🕒</span> <strong>[INSERT TIME]</strong></div>
+      <div class="event-chip"><span class="dot">💻</span> <strong>Live Online</strong></div>
+      <div class="event-chip"><span class="dot">🎟</span> <strong>FREE</strong></div>
+    </div>
+
+    <div class="cta-row">
+      <a href="#" class="btn cta-link" data-cta="final-cta">Reserve My Free Seat Now</a>
+    </div>
+    <p class="hero-reassurance">Free registration. No payment details required. Takes 30 seconds.</p>
+    <p class="final-closing">The roadmap is ready. All that's left is your decision to start.</p>
+  </div>
+</section>
+
+<!-- ============ 16. FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="brand">SkillsMate <span>Solutions</span></div>
+      <div class="footer-links">
+        <a href="[INSERT PRIVACY POLICY URL]">Privacy Policy</a>
+        <a href="[INSERT TERMS URL]">Terms & Conditions</a>
+        <a href="[INSERT REFUND POLICY URL]">Refund / Cancellation Policy</a>
+      </div>
+    </div>
+    <div class="footer-contact">Contact: [INSERT EMAIL] · [INSERT PHONE NUMBER]</div>
+    <p class="footer-disclaimer">This workshop provides education, guidance, and practical strategies. Individual results vary based on effort, consistency, prior experience, and implementation. Testimonials and outcomes reflect individual experiences and are not guarantees of future results.</p>
+    <p class="footer-copy">© [YEAR] SkillsMate Solutions. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ============ STICKY MOBILE CTA ============ -->
+<div class="sticky-cta">
+  <a href="#" class="btn btn-block cta-link" data-cta="sticky-mobile">Register Now</a>
+</div>
+
+<script>
+  // ===================================================================
+  // REGISTRATION LINK — replace this with your actual popup/registration URL.
+  // All CTA buttons on this page use this single constant, so you only
+  // need to update it in one place.
+  // ===================================================================
+  const REGISTRATION_URL = "PASTE_YOUR_REGISTRATION_POPUP_LINK_HERE";
+
+  document.querySelectorAll('.cta-link').forEach(function(btn){
+    btn.setAttribute('href', REGISTRATION_URL);
+    btn.setAttribute('target', '_blank');
+    btn.setAttribute('rel', 'noopener');
+    btn.addEventListener('click', function(){
+      // ---- CTA click tracking placeholder ----
+      // Example (GA4): gtag('event', 'cta_click', { cta_location: btn.dataset.cta });
+      // Example (Meta Pixel): fbq('track', 'Lead', { content_name: btn.dataset.cta });
+      console.log('CTA clicked:', btn.dataset.cta);
+    });
+  });
+
+  // ===== FAQ accordion (single-open on mobile) =====
+  const faqItems = document.querySelectorAll('.faq-item');
+  const isMobile = () => window.innerWidth <= 768;
+
+  faqItems.forEach(function(item){
+    const question = item.querySelector('.faq-question');
+    const answer = item.querySelector('.faq-answer');
+
+    question.addEventListener('click', function(){
+      const isOpen = item.classList.contains('open');
+
+      if (isMobile()) {
+        faqItems.forEach(function(other){
+          other.classList.remove('open');
+          other.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+      }
+
+      if (!isOpen) {
+        item.classList.add('open');
+        question.setAttribute('aria-expanded', 'true');
+      } else {
+        item.classList.remove('open');
+        question.setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
+
+  // ===================================================================
+  // ANALYTICS PLACEHOLDERS
+  // Paste your Google Analytics / GA4 and Meta Pixel snippets here,
+  // or in the <head> above, per each platform's installation guide.
+  // ===================================================================
+  // window.dataLayer = window.dataLayer || [];
+  // function gtag(){dataLayer.push(arguments);}
+  // gtag('js', new Date());
+  // gtag('config', 'GA_MEASUREMENT_ID');
+
+  // !function(f,b,e,v,n,t,s){...}(window, document,'script',
+  // 'https://connect.facebook.net/en_US/fbevents.js');
+  // fbq('init', 'YOUR_PIXEL_ID');
+  // fbq('track', 'PageView');
+</script>
+
+</body>
+</html>
